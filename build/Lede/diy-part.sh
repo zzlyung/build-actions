@@ -78,11 +78,6 @@ grep -rl '"管理权"' . | xargs -r sed -i 's?"管理权"?"改密码"?g'
 grep -rl '"带宽监控"' . | xargs -r sed -i 's?"带宽监控"?"监控"?g'
 
 
-#下载仓库
-git clone https://github.com/kenzok8/openwrt-packages
-git clone https://github.com/kenzok8/small
-
-
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
 cat >"$CLEAR_PATH" <<-EOF
 packages
